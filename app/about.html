@@ -10,8 +10,11 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/navigatie.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Reenie+Beanie&family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
     <title>Vin d'Où about</title>
   </head>
   <body>
@@ -25,7 +28,7 @@
         </div>
       </div>
 
-      <!-- landing page -->
+      <!-- landing page
       <div class="wrapper-contact">
         <div>
           <img
@@ -44,7 +47,7 @@
         </div>
       </div>
     </div>
-    <!-- overlay -->
+     overlay 
     <div class="overlay" id="overlay">
       <div class="overlay-img">
         <img src="images/logo_black.svg" alt="" />
@@ -66,50 +69,102 @@
             <a href="contact.html" class="mobile-nav-item">Contact</a>
           </li>
         </ul>
-      </nav>
+      </nav>-->
     </div>
 
-    <header id="header">
-      <nav id="header__main-nav">
-        <ul id="header__main-nav--links">
-          <li>
-            <a href="index.html"
+    <header id="header" class="header">
+      <div class="header__wrapper">
+        <img src="assets/images/logo_black.svg" alt="logo" />
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__nav-links">
+          <li class="header__nav-links--items">
+            <a class="header__nav-links--items--item" href="index.html"
               >home
-              <img src="images/Asset 9.svg" alt="logo" class="nav-img" />
+              <img
+                src="assets/images/Asset 9.svg"
+                alt="logo"
+                class="header__nav-links--items--item-img"
+              />
             </a>
-            <div class="dropdown">
-              <a href="#" class="dropdown-link">contact</a>
+            <div class="header__nav-links--items--dropdown">
+              <a
+                href="#gevel"
+                class="header__nav-links--items--dropdown-dropdown-link"
+                >contact</a
+              >
             </div>
           </li>
-          <li>
-            <a href="about.html"
+          <li class="header__nav-links--items">
+            <a class="header__nav-links--items--item" href="about.html"
               >about us
-              <img src="images/Asset 9.svg" alt="logo" class="nav-img" />
+              <img
+                src="assets/images/Asset 9.svg"
+                alt="logo"
+                class="header__nav-links--items--item-img"
+              />
             </a>
-            <div class="dropdown">
-              <a href="#about" class="dropdown-link">our story</a>
+            <div class="header__nav-links--items--dropdown">
+              <a
+                href="#"
+                class="header__nav-links--items--dropdown-dropdown-link"
+                >our story</a
+              >
             </div>
           </li>
-          <li>
-            <a href="restaurant.html"
+          <li class="header__nav-links--items">
+            <a class="header__nav-links--items--item" href="restaurant.html"
               >restaurant
-              <img src="images/Asset 9.svg" alt="logo" class="nav-img" />
+              <img
+                src="assets/images/Asset 9.svg"
+                alt="logo"
+                class="header__nav-links--items--item-img"
+              />
             </a>
-            <div class="dropdown">
-              <a href="#" class="dropdown-link">dining</a>
-              <a href="#" class="dropdown-link">outside dining</a>
-              <a href="#" class="dropdown-link">private dining</a>
+            <div class="header__nav-links--items--dropdown">
+              <a
+                href="#"
+                class="header__nav-links--items--dropdown-dropdown-link"
+                >dining</a
+              >
+              <a
+                href="#"
+                class="header__nav-links--items--dropdown-dropdown-link"
+                >outside dining</a
+              >
+              <a
+                href="#"
+                class="header__nav-links--items--dropdown-dropdown-link"
+                >private dining</a
+              >
             </div>
           </li>
-          <li>
-            <a href="menu.html"
+          <li class="header__nav-links--items">
+            <a class="header__nav-links--items--item" href="menu.html"
               >menus
-              <img src="images/Asset 9.svg" alt="logo" class="nav-img" />
+              <img
+                src="assets/images/Asset 9.svg"
+                alt="logo"
+                class="header__nav-links--items--item-img"
+              />
             </a>
-            <div class="dropdown">
-              <a href="#" class="dropdown-link">food</a>
-              <a href="#" class="dropdown-link">wine</a>
-              <a href="#" class="dropdown-link">grapperia</a>
+            <div class="header__nav-links--items--dropdown">
+              <a
+                href="#"
+                class="header__nav-links--items--dropdown-dropdown-link"
+                >food</a
+              >
+              <a
+                href="#"
+                class="header__nav-links--items--dropdown-dropdown-link"
+                >wine</a
+              >
+              <a
+                href="#"
+                class="header__nav-links--items--dropdown-dropdown-link"
+                >grapperia</a
+              >
             </div>
           </li>
         </ul>
@@ -260,6 +315,6 @@
       </footer>
     </section>
 
-    <script src="app.js"></script>
+    <script src="bundled.js"></script>
   </body>
 </html>
