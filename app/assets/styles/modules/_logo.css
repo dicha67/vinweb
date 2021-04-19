@@ -1,0 +1,42 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+  margin: 0 auto;
+
+  @mixin atSmall {
+    width: 70vw;
+    height: 70vh;
+    margin: 0 auto;
+  }
+
+  @mixin atLarge {
+    width: 50vw;
+  }
+
+  &__img {
+    width: 80%;
+
+    @mixin atLarge {
+      width: 62%;
+    }
+  }
+
+  &__title {
+    font-family: $fontPrimary;
+    font-weight: 400;
+    color: $colorLight;
+    font-size: 1.2rem;
+
+    @mixin atSmall {
+      font-size: 1.6rem;
+    }
+
+    @mixin atLarge {
+      font-size: 1.8rem;
+    }
+  }
+}
