@@ -115,7 +115,7 @@
       margin: 1rem auto;
 
       @mixin atLarge {
-        max-width: 75rem;
+        max-width: 98rem;
       }
     }
 
@@ -182,6 +182,11 @@
       display: flex;
       flex-direction: column;
       flex: 0.4;
+
+      @mixin atLarge {
+        position: relative;
+        right: 8rem;
+      }
     }
 
     &__logo {
