@@ -12,6 +12,10 @@
     margin: 0 auto;
   }
 
+  @mixin atLarge {
+    max-width: 100%;
+  }
+
   &-right {
     display: block;
     text-decoration: none;
