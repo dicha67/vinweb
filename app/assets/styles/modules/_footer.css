@@ -1,7 +1,5 @@
-@mixin atMobile {
-  .section-footer {
-    display: none;
-  }
+.section-footer {
+  display: none;
 }
 
 .mobile__footer {
@@ -39,7 +37,7 @@
     font-family: $fontPrimary;
     color: $colorPrimary;
     font-weight: 300;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   &-container-body--left .p10 {
@@ -49,7 +47,7 @@
   &-container-body--vertical {
     display: block;
     width: 2px;
-    height: 4rem;
+    height: 6rem;
     background-color: $colorPrimaryLight;
   }
 
@@ -62,14 +60,14 @@
   &-container-body--right .h10 {
     font-family: $fontPrimary;
     color: $colorPrimary;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-weight: 300;
     margin-top: -0.5rem;
   }
 
   &-container-body--right-title {
     font-family: $fontTitels;
-    font-size: 0.65rem;
+    font-size: 0.83rem;
     font-weight: 300;
   }
 
@@ -78,13 +76,13 @@
     justify-content: space-around;
     width: 2rem;
     position: relative;
-    top: 0.5rem;
-    right: 0.3rem;
+    top: 0.7rem;
+    right: 0.5rem;
   }
 
   &-container--social a i {
     color: $colorPrimary;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -94,8 +92,9 @@
   }
 
   .footer {
-    width: 100vw;
+    width: 99vw;
     height: 10vh;
+    margin: 0 auto;
 
     &__horizontal {
       width: 100%;
@@ -125,6 +124,10 @@
       padding-left: 3em;
       color: $colorPrimary;
 
+      @mixin atMedium {
+        padding-top: 1rem;
+      }
+
       @mixin atLarge {
         padding-left: 10em;
       }
@@ -143,9 +146,9 @@
     }
 
     &__social {
-      width: 3rem;
+      width: 2.5rem;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
     }
 
     &__social a i {
@@ -193,6 +196,10 @@
       width: 10rem;
       position: relative;
       align-self: flex-end;
+
+      @mixin atMedium {
+        top: 0.8rem;
+      }
 
       @mixin atLarge {
         position: relative;

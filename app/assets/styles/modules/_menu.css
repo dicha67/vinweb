@@ -1,0 +1,448 @@
+.menu-logo {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-foto {
+    transform: scale(0.5);
+
+    @mixin atMedium {
+      transform: scale(0.7);
+    }
+  }
+}
+
+.menu-content {
+  width: 100vw;
+  max-width: 75rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr) 0.1fr;
+  margin: 0 auto;
+
+  @mixin atLarge {
+    max-width: 85rem;
+  }
+}
+
+.food__container {
+  width: 100vw;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @mixin atMedium {
+    flex-direction: row-reverse;
+    width: 100%;
+    max-width: 50rem;
+  }
+
+  @mixin atLarge {
+    flex-direction: row-reverse;
+    max-width: 85rem;
+  }
+
+  &-img {
+    display: block;
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+  &-img img {
+    transform: rotate(90deg);
+
+    @mixin atSmall {
+      max-width: 80%;
+      position: relative;
+      left: 4rem;
+    }
+
+    @mixin atMedium {
+      transform: rotate(0);
+      max-width: 100%;
+      position: relative;
+      left: 5rem;
+      top: 2rem;
+    }
+
+    @mixin atLarge {
+      transform: rotate(0);
+      max-width: 80%;
+      position: relative;
+      left: 7rem;
+      top: -6rem;
+    }
+  }
+
+  &-body {
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+  }
+
+  &-body .main-haakje {
+    transform: scale(1.3);
+    position: relative;
+    top: 2rem;
+
+    @mixin atSmall {
+      transform: scale(1.1);
+    }
+
+    @mixin atMedium {
+      transform: scale(1.3);
+    }
+  }
+
+  &-body-address {
+    width: 95%;
+
+    @mixin atSmall {
+      position: relative;
+      top: 3.2rem;
+      max-width: 80%;
+    }
+
+    @mixin atMedium {
+      top: 0;
+      max-width: 100%;
+    }
+
+    @mixin atLarge {
+      max-width: 90%;
+    }
+  }
+
+  &-body-address-title {
+    font-size: 1.7rem;
+    font-family: $fontTitels;
+    font-weight: 400;
+    color: $colorPrimary;
+    position: relative;
+    left: -2.7rem;
+    top: -2rem;
+
+    @mixin atSmall {
+      left: -3rem;
+    }
+
+    @mixin atMedium {
+      font-size: 2rem;
+      top: -1rem;
+      left: -3.5rem;
+    }
+  }
+
+  &-body-address-paragraaf {
+    font-family: $fontPrimary;
+    font-weight: 300;
+    font-size: 0.92rem;
+    color: $colorPrimary;
+    letter-spacing: 0.2px;
+    line-height: 1.15;
+    position: relative;
+    top: -2.8rem;
+    left: -1rem;
+
+    @mixin atSmall {
+      letter-spacing: 0.3px;
+      line-height: 1.3;
+      font-size: 1rem;
+    }
+
+    @mixin atMedium {
+      top: -1.7rem;
+      left: 0;
+      font-size: 0.96rem;
+      letter-spacing: 0.2px;
+      line-height: 1.2;
+    }
+
+    @mixin atLarge {
+      font-size: 1.1rem;
+      letter-spacing: 0.3px;
+      line-height: 1.3;
+    }
+  }
+
+  &-body-address-paragraaf .p {
+    margin-top: -0.4em;
+
+    @mixin atSmall {
+      margin-top: 0;
+    }
+
+    @mixin atMedium {
+      margin-top: 0;
+    }
+  }
+
+  &-body-address a button {
+    display: inline;
+    width: 90%;
+    text-align: center;
+    background: none;
+    border: none;
+    font-family: $fontTitels;
+    font-size: 0.94rem;
+    color: $colorPrimary;
+    font-weight: 300;
+    position: relative;
+    cursor: pointer;
+
+    @mixin atSmall {
+      width: 100%;
+    }
+
+    @mixin atMedium {
+      width: 100%;
+      font-size: 1rem;
+      text-align: right;
+      position: relative;
+      top: 1.5rem;
+    }
+  }
+
+  &-body-address a button::after {
+    content: "";
+    display: inline;
+    width: 48px;
+    height: 1px;
+    background-color: $colorPrimary;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @mixin atSmall {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @mixin atMedium {
+      left: 97%;
+      transform: translateX(-3.9rem);
+    }
+
+    @mixin atLarge {
+      left: 100%;
+      transform: translateX(-3.9rem);
+    }
+  }
+}
+
+.wine__container {
+  width: 100vw;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+
+  @mixin atMedium {
+    flex-direction: row;
+    width: 100%;
+    max-width: 50rem;
+  }
+
+  @mixin atLarge {
+    flex-direction: row;
+    max-width: 85rem;
+  }
+
+  &-img {
+    width: 60vw;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+
+    @mixin atMedium {
+      top: 2.5rem;
+      left: -4rem;
+    }
+
+    @mixin atLarge {
+      top: -7rem;
+      left: -4rem;
+    }
+  }
+
+  &-img img {
+    width: 80%;
+    position: relative;
+    left: 2rem;
+  }
+
+  &-body {
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    padding: 2rem 0;
+    position: relative;
+    top: 1rem;
+  }
+
+  &-body img.main-haakje {
+    transform: scale(0.9);
+  }
+
+  &-body-address {
+    width: 95%;
+    position: relative;
+    top: 2rem;
+  }
+
+  &-body-address-title {
+    font-size: 1.7rem;
+    font-family: $fontTitels;
+    font-weight: 400;
+    color: $colorPrimary;
+    position: relative;
+    left: -2.6rem;
+    top: 0;
+
+    @mixin atMedium {
+      font-size: 1.7rem;
+      top: 0;
+      left: -2.7rem;
+    }
+
+    @mixin atLarge {
+      font-size: 2rem;
+      top: 1rem;
+      left: -3.5rem;
+    }
+  }
+
+  &-body-address-paragraaf {
+    font-family: $fontPrimary;
+    font-weight: 300;
+    font-size: 1rem;
+    color: $colorPrimary;
+    letter-spacing: 0.1px;
+    line-height: 1.3;
+    position: relative;
+    top: 0;
+    left: -1rem;
+
+    @mixin atSmall {
+      max-width: 80%;
+      letter-spacing: 0.3px;
+      line-height: 1.4;
+      padding: 0.2em 0.5em;
+    }
+
+    @mixin atMedium {
+      max-width: 100%;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+      top: -1rem;
+      line-height: 1.3;
+    }
+
+    @mixin atLarge {
+      max-width: 100%;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      top: 0;
+      line-height: 1.4;
+    }
+  }
+
+  &-body-address-paragraaf a button {
+    width: 100%;
+    display: block;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: $fontTitels;
+    font-size: 0.94rem;
+    color: $colorPrimary;
+    font-weight: 300;
+    position: relative;
+    top: 2rem;
+    right: 0;
+    cursor: pointer;
+
+    @mixin atMedium {
+      font-size: 1rem;
+      text-align: right;
+      position: relative;
+      top: 2.5rem;
+    }
+  }
+
+  &-body-address-paragraaf a button::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 1px;
+    background-color: $colorPrimary;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @mixin atMedium {
+      left: 94%;
+      transform: translateX(-100%);
+    }
+
+    @mixin atLarge {
+      left: 98%;
+      transform: translateX(-100%);
+    }
+  }
+}
+
+.grappa__container {
+  width: 100vw;
+  margin: 0 auto;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column;
+
+  @mixin atMedium {
+    flex-direction: row-reverse;
+    width: 100%;
+    max-width: 50rem;
+  }
+
+  @mixin atLarge {
+    flex-direction: row-reverse;
+    max-width: 85rem;
+  }
+
+  &-img {
+    width: 60vw;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+
+    @mixin atMedium {
+      top: 2rem;
+      left: 4rem;
+    }
+  }
+
+  &-img img.grappa-img {
+    @mixin atSmall {
+      width: 70%;
+      position: relative;
+      left: 4rem;
+    }
+
+    @mixin atLarge {
+      position: relative;
+      left: 6rem;
+    }
+  }
+}

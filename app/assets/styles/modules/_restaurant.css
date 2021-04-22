@@ -1,6 +1,6 @@
 .restaurant-content {
   width: 100vw;
-  max-width: 75rem;
+  max-width: 85rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -82,10 +82,15 @@
 
   &-img {
     display: block;
-    width: 60vw;
+    width: 50vw;
     margin: 0 auto;
 
     @mixin atMedium {
+      margin: 0;
+      width: 100%;
+    }
+
+    @mixin atLarge {
       margin: 0;
       width: 100%;
     }
@@ -116,6 +121,12 @@
 
   &-address {
     width: 80%;
+    position: relative;
+    top: 1rem;
+
+    @mixin atSmall {
+      width: 70%;
+    }
 
     @mixin atMedium {
       max-width: 70%;
@@ -133,7 +144,7 @@
     left: -2rem;
     top: -0.3rem;
 
-    @mixin atMedium {
+    @mixin atLarge {
       font-size: 1.8rem;
     }
   }
@@ -148,6 +159,11 @@
     margin-left: -0.4rem;
 
     @mixin atMedium {
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+    }
+
+    @mixin atLarge {
       font-size: 1.2rem;
     }
   }
@@ -178,6 +194,10 @@
     position: relative;
     margin: 0 auto;
 
+    @mixin atSmall {
+      width: 90%;
+    }
+
     @mixin atMedium {
       margin: 0;
       width: 100%;
@@ -188,7 +208,7 @@
   &-img img {
     width: 100%;
     transform: rotate(-90deg) scale(1.4);
-    margin-top: -6rem;
+    margin-top: -3rem;
 
     @mixin atMedium {
       transform: rotate(0) scale(1.6);
