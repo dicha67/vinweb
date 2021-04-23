@@ -41,13 +41,48 @@
     left: 3rem;
   }
 
-  &__hamburger-menu {
-    width: 2.2rem;
-    height: 2.2rem;
+  &__hamburger-menu-icon {
+    width: 2rem;
+    height: 1.5rem;
     position: absolute;
-    right: 1.6rem;
+    z-index: 50;
+    right: 1rem;
     top: 1.7rem;
+    margin-right: 1rem;
     cursor: pointer;
+
+    &__top {
+      width: 30px;
+      height: 3px;
+      background-color: $colorPrimary;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: 0 0;
+      transition: transform 0.3s ease-out;
+    }
+
+    &__middle {
+      width: 30px;
+      height: 3px;
+      background-color: $colorPrimary;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      transition: all 0.3s ease-out;
+      transform-origin: 0 50%;
+    }
+
+    &__bottom {
+      width: 20px;
+      height: 3px;
+      background-color: $colorPrimary;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform-origin: 0 95%;
+      transition: transform 0.3s ease-out;
+    }
 
     @mixin atSmall {
       top: 2.8rem;
@@ -55,19 +90,20 @@
     }
   }
 
-  &__hamburger-menu--bar-1,
-  &__hamburger-menu--bar-2 {
-    width: 30px;
-    height: 3px;
-    background-color: $colorPrimary;
-    margin: 7.5px 0;
-  }
+  &__hamburger-menu-icon--close-x {
+    .header__hamburger-menu-icon__top {
+      transform: rotate(45deg) scaleX(1.1);
+    }
 
-  &__hamburger-menu--bar-3 {
-    width: 20px;
-    height: 3px;
-    background-color: $colorPrimary;
-    margin-top: 7.5px;
+    .header__hamburger-menu-icon__middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    .header__hamburger-menu-icon__bottom {
+      width: 29px;
+      transform: rotate(-45deg) scaleX(1.1) translateY(2px);
+    }
   }
 
   &__wrapper-nav {

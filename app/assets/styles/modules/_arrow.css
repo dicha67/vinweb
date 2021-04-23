@@ -18,7 +18,7 @@
   &-right {
     display: block;
     text-decoration: none;
-    color: $colorPrimary;
+    color: $colorPrimaryLight;
     font-size: 1.6rem;
     position: absolute;
     right: 0.5rem;

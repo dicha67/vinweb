@@ -54,6 +54,8 @@
 
   &-img img {
     transform: rotate(90deg);
+    position: relative;
+    bottom: 4rem;
 
     @mixin atSmall {
       max-width: 80%;
@@ -444,6 +446,28 @@
       position: relative;
       left: 8rem;
       top: -3rem;
+    }
+  }
+}
+
+.menu__arrow__up {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  position: relative;
+
+  @mixin atMedium {
+    position: relative;
+    right: 5rem;
+  }
+
+  &-right {
+    font-size: 1.6rem;
+    position: absolute;
+    right: 2rem;
+    color: $colorPrimaryLight;
+
+    @mixin atMedium {
+      right: 6rem;
     }
   }
 }

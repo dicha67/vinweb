@@ -100,11 +100,16 @@
     width: 80%;
     position: relative;
     left: 1rem;
+    bottom: 3rem;
 
     @mixin atMedium {
       width: 70%;
       left: 0;
       bottom: 5rem;
+    }
+
+    @mixin atLarge {
+      left: 9rem;
     }
   }
 
@@ -255,13 +260,24 @@
   }
 }
 
-.arrow__up {
+.restaurant__arrow__up {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
-  height: 10vh;
+  position: relative;
 
   @mixin atMedium {
     position: relative;
     right: 5rem;
+  }
+
+  &-right {
+    font-size: 1.6rem;
+    position: absolute;
+    right: 2rem;
+    color: $colorPrimaryLight;
+
+    @mixin atMedium {
+      right: 6rem;
+    }
   }
 }

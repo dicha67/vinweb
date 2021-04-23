@@ -162,8 +162,19 @@
     cursor: pointer;
     outline: none;
 
+    @mixin atSmall {
+      position: relative;
+      left: -0.5rem;
+    }
+
     @mixin atMedium {
       margin-top: -0.5rem;
+      position: relative;
+      left: -0.5rem;
+    }
+
+    @mixin atLarge {
+      left: -0.15rem;
     }
   }
 }
