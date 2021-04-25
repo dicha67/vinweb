@@ -16,15 +16,11 @@
 
 .menu-content {
   width: 100vw;
-  max-width: 75rem;
+  max-width: 85rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr) 0.1fr;
   margin: 0 auto;
-
-  @mixin atLarge {
-    max-width: 85rem;
-  }
 }
 
 .food__container {

@@ -1,37 +1,51 @@
+.restaurant__menu-logo {
+  display: none;
+
+  @mixin atMedium {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-foto {
+      transform: scale(0.5);
+
+      @mixin atMedium {
+        transform: scale(0.7);
+      }
+    }
+  }
+}
+
 .restaurant-content {
   width: 100vw;
   max-width: 85rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.8fr 0.8fr 0.8fr 0.2fr;
+  grid-template-rows: 0.8fr 0.8fr 1fr 0.2fr;
 }
 
 .mobile__wrapper {
   display: flex;
-  width: 70vw;
-  height: 60vh;
+  width: 80vw;
+  height: 70vh;
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
   padding: 3em;
 
+  &-logo {
+    width: 100%;
+
+    @mixin atSmall {
+      width: 60%;
+    }
+  }
+
   @mixin atMedium {
     display: none;
-  }
-
-  &-svg {
-    width: 100%;
-    height: 6rem;
-    transform: scale(1.1);
-  }
-
-  &-title {
-    font-family: $fontHaakje;
-    font-size: 3rem;
-    font-weight: 400;
-    color: $colorPrimary;
-    padding: 0 0.2em;
   }
 }
 
@@ -277,6 +291,11 @@
     color: $colorPrimaryLight;
 
     @mixin atMedium {
+      position: absolute;
+      right: 6rem;
+    }
+
+    @mixin atLarge {
       right: 6rem;
     }
   }
