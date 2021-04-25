@@ -2,13 +2,12 @@
   display: block;
 
   position: relative;
-  width: 90vw;
-  margin-top: -3rem;
+  width: 100vw;
 
   @mixin atMedium {
     width: 100%;
-    max-width: 50rem;
-    margin: 0 auto;
+    /* max-width: 50rem;*/
+    /*margin: 0 auto;*/
   }
 
   @mixin atLarge {
@@ -21,6 +20,6 @@
     color: $colorPrimaryLight;
     font-size: 1.6rem;
     position: absolute;
-    right: 0.5rem;
+    right: 2rem;
   }
 }

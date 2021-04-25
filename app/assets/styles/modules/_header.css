@@ -147,6 +147,7 @@
 @mixin atMedium {
   .header {
     width: 100vw;
+    height: 10vh;
     max-width: 75rem;
     margin-left: auto;
     margin-right: auto;

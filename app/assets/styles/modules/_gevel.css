@@ -1,10 +1,10 @@
 .hoofd-content {
   width: 100vw;
-  max-width: 85rem;
+  /*max-width: 85rem;*/
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.9fr 0.1fr;
+  grid-template-rows: 1fr 0.8fr 0.1fr;
 }
 
 .container__gevel {
@@ -49,6 +49,7 @@
     @mixin atMedium {
       margin-left: 0;
       margin-right: 0;
+      width: 100%;
     }
 
     @mixin atLarge {
@@ -72,6 +73,7 @@
       justify-content: center;
       align-items: center;
       position: relative;
+      top: 7rem;
     }
   }
 
@@ -126,6 +128,7 @@
     margin-top: -5px;
     line-height: 0.2;
     letter-spacing: 0.1px;
+    /* text-shadow: 0.4px 0.4px 0 rgba(16, 17, 17, 0.7);*/
 
     @mixin atMedium {
       position: relative;
@@ -152,29 +155,31 @@
     }
   }
 
-  &-body-address--paragraaf .p1 button {
+  &-body-address--paragraaf .p1 .a1 {
     border: none;
     background: transparent;
     font-weight: 300;
-    font-size: 0.9rem;
-    margin-top: -0.3rem;
-    margin-left: -0.3rem;
+    font-size: 1rem;
+    position: relative;
+    top: 0.2rem;
+
     cursor: pointer;
     outline: none;
 
     @mixin atSmall {
       position: relative;
-      left: -0.5rem;
+      left: 0;
     }
 
     @mixin atMedium {
       margin-top: -0.5rem;
       position: relative;
-      left: -0.5rem;
+      left: 0;
+      top: 0.5rem;
     }
 
     @mixin atLarge {
-      left: -0.15rem;
+      left: 0;
     }
   }
 }
@@ -271,6 +276,7 @@
 
     @mixin atMedium {
       position: absolute;
+      left: -0.5rem;
       z-index: 5;
     }
   }
