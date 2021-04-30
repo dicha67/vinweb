@@ -20,7 +20,7 @@
 
 .restaurant-content {
   width: 100vw;
-  max-width: 85rem;
+  max-width: 100vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -281,7 +281,7 @@
 
   @mixin atMedium {
     position: relative;
-    right: 5rem;
+    right: 3rem;
   }
 
   &-right {
@@ -292,11 +292,11 @@
 
     @mixin atMedium {
       position: absolute;
-      right: 6rem;
+      right: 1rem;
     }
 
     @mixin atLarge {
-      right: 6rem;
+      right: 1rem;
     }
   }
 }

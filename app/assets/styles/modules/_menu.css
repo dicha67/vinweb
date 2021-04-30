@@ -16,7 +16,7 @@
 
 .menu-content {
   width: 100vw;
-  max-width: 85rem;
+  max-width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr) 0.1fr;
@@ -453,7 +453,7 @@
 
   @mixin atMedium {
     position: relative;
-    right: 5rem;
+    right: 2rem;
   }
 
   &-right {
@@ -463,7 +463,7 @@
     color: $colorPrimaryLight;
 
     @mixin atMedium {
-      right: 6rem;
+      right: 2rem;
     }
   }
 }

@@ -20,14 +20,14 @@
 
 .about-content {
   width: 100vw;
-  max-width: 75rem;
+  max-width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.4fr 0.1fr;
   margin: 0 auto;
 
   @mixin atLarge {
-    max-width: 85rem;
+    max-width: 100vw;
   }
 }
 
@@ -239,4 +239,26 @@
 .arrow__up {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+
+  position: relative;
+  width: 100vw;
+
+  @mixin atMedium {
+    width: 100%;
+    /* max-width: 50rem;*/
+    /*margin: 0 auto;*/
+  }
+
+  @mixin atLarge {
+    max-width: 100%;
+  }
+
+  &-right {
+    display: block;
+    text-decoration: none;
+    color: $colorPrimaryLight;
+    font-size: 1.6rem;
+    position: absolute;
+    right: 2rem;
+  }
 }

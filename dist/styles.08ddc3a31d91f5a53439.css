@@ -529,6 +529,7 @@ a[href^="tel"] {
 @media (min-width: 850px) {
   .header {
     width: 100vw;
+    height: 10vh;
     max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
@@ -619,7 +620,7 @@ a[href^="tel"] {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 70vh;
+  height: 60vh;
   margin: 0 auto;
 }
 
@@ -632,7 +633,7 @@ a[href^="tel"] {
 }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .logo {
     width: 56.25rem;
@@ -645,7 +646,7 @@ a[href^="tel"] {
     width: 80%;
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .logo__img {
       width: 50%
@@ -666,7 +667,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .logo__title {
       font-size: 1.6rem
@@ -675,11 +676,11 @@ a[href^="tel"] {
 
 .hoofd-content {
   width: 100vw;
-  max-width: 85rem;
+  /*max-width: 85rem;*/
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.9fr 0.1fr;
+  grid-template-rows: 1fr 0.8fr 0.1fr;
 }
 
 .container__gevel {
@@ -700,7 +701,7 @@ a[href^="tel"] {
     margin: 0 auto;
 }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1370px) {
 
 .container__gevel {
       max-width: 85rem;
@@ -736,11 +737,12 @@ a[href^="tel"] {
 
 .container__gevel-img-foto {
       margin-left: 0;
-      margin-right: 0
+      margin-right: 0;
+      width: 100%
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .container__gevel-img-foto {
       position: relative;
@@ -765,7 +767,8 @@ a[href^="tel"] {
       display: flex;
       justify-content: center;
       align-items: center;
-      position: relative
+      position: relative;
+      top: 7rem
   }
   }
 
@@ -832,6 +835,8 @@ a[href^="tel"] {
     letter-spacing: 0.1px;
   }
 
+/* text-shadow: 0.4px 0.4px 0 rgba(16, 17, 17, 0.7);*/
+
 @media (min-width: 850px) {
 
 .container__gevel-body-address--paragraaf {
@@ -843,7 +848,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .container__gevel-body-address--paragraaf {
       font-size: 1.1rem;
@@ -867,38 +872,40 @@ a[href^="tel"] {
   }
   }
 
-.container__gevel-body-address--paragraaf .p1 button {
+.container__gevel-body-address--paragraaf .p1 .a1 {
     border: none;
     background: transparent;
     font-weight: 300;
-    font-size: 0.9rem;
-    margin-top: -0.3rem;
-    margin-left: -0.3rem;
+    font-size: 1rem;
+    position: relative;
+    top: 0.2rem;
+
     cursor: pointer;
     outline: none;
   }
 
 @media (min-width: 530px) {
 
-.container__gevel-body-address--paragraaf .p1 button {
+.container__gevel-body-address--paragraaf .p1 .a1 {
       position: relative;
-      left: -0.5rem
+      left: 0
   }
   }
 
 @media (min-width: 850px) {
 
-.container__gevel-body-address--paragraaf .p1 button {
+.container__gevel-body-address--paragraaf .p1 .a1 {
       margin-top: -0.5rem;
       position: relative;
-      left: -0.5rem
+      left: 0;
+      top: 0.5rem
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
-.container__gevel-body-address--paragraaf .p1 button {
-      left: -0.15rem
+.container__gevel-body-address--paragraaf .p1 .a1 {
+      left: 0
   }
   }
 
@@ -919,7 +926,7 @@ a[href^="tel"] {
     margin: 0 auto;
 }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1370px) {
 
 .container__opening {
       max-width: 85rem;
@@ -952,7 +959,7 @@ a[href^="tel"] {
     margin-right: auto;
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .container__opening-img-foto {
       position: relative;
@@ -979,7 +986,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .container__opening-body {
       left: 12rem
@@ -1042,7 +1049,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .container__opening-body-address--paragraaf {
       font-size: 1.1rem
@@ -1181,7 +1188,7 @@ a[href^="tel"] {
 }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .dining__container {
     max-width: 85rem;
@@ -1202,7 +1209,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .dining__container-img {
       margin: 0;
@@ -1226,7 +1233,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .dining__container-img .dining-img {
       left: 9rem
@@ -1276,7 +1283,7 @@ a[href^="tel"] {
     top: -0.3rem;
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .dining__container-address-title {
       font-size: 1.8rem
@@ -1301,7 +1308,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .dining__container-paragraaf {
       font-size: 1.2rem
@@ -1327,7 +1334,7 @@ a[href^="tel"] {
 }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .outside__container {
     max-width: 85rem;
@@ -1380,7 +1387,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .outside__container-body--left {
       left: 9rem
@@ -1405,7 +1412,7 @@ a[href^="tel"] {
 }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .private__container {
     max-width: 85rem;
@@ -1449,7 +1456,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .restaurant__arrow__up-right {
       right: 6rem
@@ -1502,7 +1509,7 @@ a[href^="tel"] {
 }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .food__container {
     flex-direction: row-reverse;
@@ -1542,7 +1549,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .food__container-img img {
       transform: rotate(0);
@@ -1602,7 +1609,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .food__container-body-address {
       max-width: 90%
@@ -1667,7 +1674,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .food__container-body-address-paragraaf {
       font-size: 1.1rem;
@@ -1754,7 +1761,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .food__container-body-address a button::after {
       left: 100%;
@@ -1781,7 +1788,7 @@ a[href^="tel"] {
 }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .wine__container {
     flex-direction: row;
@@ -1804,7 +1811,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .wine__container-img {
       top: -7rem;
@@ -1856,7 +1863,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .wine__container-body-address-title {
       font-size: 2rem;
@@ -1898,7 +1905,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .wine__container-body-address-paragraaf {
       max-width: 100%;
@@ -1955,7 +1962,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .wine__container-body-address-paragraaf a button::after {
       left: 98%;
@@ -1981,7 +1988,7 @@ a[href^="tel"] {
 }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .grappa__container {
     flex-direction: row-reverse;
@@ -2013,7 +2020,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .grappa__container-img img.grappa-img {
       position: relative;
@@ -2085,7 +2092,7 @@ a[href^="tel"] {
   margin: 0 auto;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .about-content {
     max-width: 85rem
@@ -2110,7 +2117,7 @@ a[href^="tel"] {
 }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .about__container {
     max-width: 85rem;
@@ -2147,7 +2154,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .about__container-img img {
       max-width: 100%;
@@ -2221,7 +2228,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .about__container-body-address-title {
       font-size: 2rem
@@ -2258,7 +2265,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .about__container-body-address-paragraaf {
       font-size: 1.1rem;
@@ -2291,7 +2298,7 @@ a[href^="tel"] {
 }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .qoute__container {
     width: 30vw;
@@ -2323,7 +2330,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .qoute__container-qoute {
       font-size: 1.3rem;
@@ -2358,7 +2365,7 @@ a[href^="tel"] {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .qoute__container-titel {
       font-size: 1.3rem;
@@ -2375,20 +2382,19 @@ a[href^="tel"] {
   display: block;
 
   position: relative;
-  width: 90vw;
-  margin-top: -3rem;
+  width: 100vw;
 }
 
 @media (min-width: 850px) {
 
 .arrow__up {
     width: 100%;
-    max-width: 50rem;
-    margin: 0 auto;
+    /* max-width: 50rem;*/
+    /*margin: 0 auto;*/
 }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1370px) {
 
 .arrow__up {
     max-width: 100%;
@@ -2401,7 +2407,7 @@ a[href^="tel"] {
     color: rgba(22, 23, 23, 0.8);
     font-size: 1.6rem;
     position: absolute;
-    right: 0.5rem;
+    right: 2rem;
   }
 
 .section-footer {
@@ -2524,7 +2530,7 @@ a[href^="tel"] {
       margin: 1rem auto;
     }
 
-      @media (min-width: 1200px) {
+      @media (min-width: 1370px) {
 
     .footer__container {
         max-width: 98rem
@@ -2545,7 +2551,7 @@ a[href^="tel"] {
     }
   }
 
-      @media (min-width: 1200px) {
+      @media (min-width: 1370px) {
 
     .footer__body {
         padding-left: 10em
@@ -2606,7 +2612,7 @@ a[href^="tel"] {
       flex: 0.4;
     }
 
-      @media (min-width: 1200px) {
+      @media (min-width: 1370px) {
 
     .footer__design {
         position: relative;
@@ -2627,7 +2633,7 @@ a[href^="tel"] {
     }
   }
 
-      @media (min-width: 1200px) {
+      @media (min-width: 1370px) {
 
     .footer__logo {
         position: relative;
