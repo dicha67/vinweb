@@ -8,6 +8,7 @@ html {
 
 body {
   overflow-x: hidden;
+  background-color: #fff;
 }
 
 img {
@@ -25,5 +26,5 @@ a {
 
 a[href^="tel"] {
   text-decoration: inherit;
-  color: inherit;
+  color: rgb(16, 17, 17);
 }

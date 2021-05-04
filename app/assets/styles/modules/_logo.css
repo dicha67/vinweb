@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 60vh;
+  height: 50vh;
   margin: 0 auto;
 
   @mixin atSmall {
@@ -17,14 +17,6 @@
     width: 56.25rem;
     position: relative;
     left: 4rem;
-  }
-
-  &__img {
-    width: 80%;
-
-    @mixin atLarge {
-      width: 50%;
-    }
   }
 
   &__title {

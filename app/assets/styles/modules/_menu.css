@@ -1,9 +1,13 @@
 .menu-logo {
   width: 100vw;
-  height: 70vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @mixin atMedium {
+    height: 60vh;
+  }
 
   &-foto {
     transform: scale(0.5);

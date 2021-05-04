@@ -3,7 +3,7 @@
 
   @mixin atMedium {
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@
 .mobile__wrapper {
   display: flex;
   width: 80vw;
-  height: 70vh;
+  height: 50vh;
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
