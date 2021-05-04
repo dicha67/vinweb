@@ -1,8 +1,9 @@
 .arrow__up {
   display: block;
-
-  position: relative;
+  position: fixed;
+  bottom: 14rem;
   width: 100vw;
+  z-index: 1000;
 
   @mixin atMedium {
     width: 100%;
@@ -18,8 +19,12 @@
     display: block;
     text-decoration: none;
     color: $colorPrimaryLight;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     position: absolute;
-    right: 3rem;
+    right: 2rem;
+
+    @mixin atMedium {
+      font-size: 1.4rem;
+    }
   }
 }
