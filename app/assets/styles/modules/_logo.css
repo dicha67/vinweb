@@ -9,7 +9,6 @@
 
   @mixin atSmall {
     width: 30.25rem;
-
     margin: 0 auto;
   }
 

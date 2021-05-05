@@ -6,7 +6,7 @@
   align-items: center;
 
   @mixin atSmall {
-    height: 60vh;
+    height: 50vh;
   }
 
   &-foto {
